@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Перевірка</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Скільки буде 10/5</h1>
+<div class="container">
+  <div>
+    <select id="variant">
+      <option value="2">2</option>
+      <option value="5">5</option>
+      <option value="0.5">0.5</option>
+    </select>
+  </div>
+
+  <button onclick="checkOption()">Перевірити</button>
+  <p id="result"></p>
+</div>
+<div class="link">
+  <a href="../index.html">Виберіть завдання</a>
+</div>
+<script>
+  function checkOption() {
+    var selectElement = document.getElementById("variant");
+    var selectedValue = selectElement.value;
+    var resultElement = document.getElementById("result");
+
+    if (selectedValue === "2") {
+      resultElement.textContent = "Правильна відповідь";
+    } else if (selectedValue === "5") {
+      resultElement.textContent = "Неправильна відповідь";
+    } else if (selectedValue === "0.5") {
+      resultElement.textContent = "Неправильна відповідь";
+    }
+  }
+    </script>
+  </body>
+</html>

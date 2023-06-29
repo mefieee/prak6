@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Кольори фону</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 for="color-select">Колір фону:</h1>
+    <select id="color-select" onchange="changeColor(this.value)">
+      <option value="brown">Коричневий</option>
+      <option value="white">Білий</option>
+      <option value="gray">Сірий</option>
+    </select>
+    <div class="link">
+      <a href="../index.html">Виберіть завдання</a>
+    </div>
+    <script>
+      function changeColor(color) {
+        document.body.style.backgroundColor = color;
+      }
+    </script>
+  </body>
+</html>
